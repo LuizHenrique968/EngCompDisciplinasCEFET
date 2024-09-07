@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+  <header id="header-nav">
+    <h1>BUSCADOR MATÉRIAS.</h1>
+    <nav>
+      <a id="sair" href="Index.html">SAIR.</a>
+    </nav>
+  </header>
+
+  <h2>Escolha o semestre para verificar as matérias optativas disponíveis:</h2>
+  <select id="semestre" onchange="mostrarMaterias()">
+      <option value="1">1° SEMESTRE.</option>
+      <option value="2">2° SEMESTRE.</option>
+      <option value="3">3° SEMESTRE.</option>
+      <option value="4">4° SEMESTRE.</option>
+      <option value="5">5° SEMESTRE.</option>
+      <option value="6">6° SEMESTRE.</option>
+      <option value="7">7° SEMESTRE.</option>
+      <option value="8">8° SEMESTRE.</option>
+      <option value="9">9° SEMESTRE.</option>
+      <option value="10">10° SEMESTRE.</option>
+  </select>
+
+  <div id="materias">
+      <!-- As matérias serão inseridas aqui -->
+  </div>
+  
+  <!-- Períodos -->
+ <h2 id="periodo1" class="periodo">1° PERÍODO</h2>
+<nav id="materias1" class="materias escondido">
+  <ol>
+    <li><a class="pagina" href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_01_IECO_2023.pdf">INTRODUÇÃO À ENGENHARIA DE COMPUTAÇÃO.</a></li>
+    <li><a class="pagina" href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_02_FPRO_2023.pdf">FUNDAMENTOS DE PROGRAMAÇÃO 1.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_03_LFPR_2023.pdf">LABORATÓRIO DE FUNDAMENTOS DE PROGRAMAÇÃO 1.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_04_CFVR_2023.pdf">CÁLCULO COM FUNÇÕES DE UMA VARIÁVEL REAL.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_05_FTEC_2023.pdf">FILOSOFIA DA TECNOLOGIA.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_06_CEEL_2023.pdf">CIRCUITOS ELÉTRICOS E ELETRÔNICA.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_07_LCEE_2023.pdf">LABORATÓRIO DE CIRCUITOS ELÉTRICOS E ELETRÔNICA.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_08_MCIE_2023.pdf">METODOLOGIA CIENTÍFICA.</a></li>
+
+    <!-- Materiais que serão carregadas -->
+   <div id="mais-materias1" class="escondido">
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_09_IINS_2023.pdf">Matéria 6</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P01_10_LIBR_2023.pdf">Matéria 7</a></li>
+  </div>
+  </ol>
+
+</nav>
+
+<h2 id="periodo2" class="periodo">2° PERÍODO</h2>
+<nav id="materias2" class="materias escondido">
+  <ol>
+    <li><a class="pagina" href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_01_FPRO2_2023.pdf">FUNDAMENTOS DE PROGRAMAÇÃO 2.</a></li>
+    <li><a class="pagina" href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_02_LFPR2_2023.pdf">LABORATÓRIO DE FUNDAMENTOS DE PROGRAMAÇÃO 2.</a></li>
+    <li><a class="pagina" href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_03_MDIS0_2023.pdf">MATEMÁTICA DISCRETA.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_04_SDPC0_2023.pdf">SISTEMAS DIGITAIS PARA COMPUTAÇÃO.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_05_LSDC0_2023.pdf">LABORATÓRIO DE SISTEMAS DIGITAIS PARA COMPUTAÇÃO.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_06_GAAL0_2023.pdf">GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_07_ISER0_2023.pdf">INTEGRAÇÃO E SÉRIES.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_08_BDAD1_2023.pdf">BANCO DE DADOS I.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P02_09_RCOM1_2023.pdf">REDES DE COMPUTADORES I.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo3" class="periodo">3° PERÍODO</h2>
+<nav id="materias3" class="materias escondido">
+  <ol>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_01_AOCO1_2023.pdf">ARQUITETTURA E ORGANIZAÇÃO DE COMPUTADORES I.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_02_LAOC1_2023.pdf">LABORATÓRIO E ARQUITETURA DE COMPUTADORES I.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_03_POOB0_2023.pdf">PROGRAMAÇÃO ORIENTADA A OBJETOS.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_04_LPOO0_2023.pdf">LABORATÓRIO DE PROGRAMAÇÃO ORIENTADA A OBJETOS.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_05_CFVV1_2023.pdf">CÁLCULO COM FUNÇÕES DE VÁRIAS VARIÁVEIS I.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_06_FMEC0_2023.pdf">FUNDAMENTOS DE MECÂNICA.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_07_BDAD2_2023.pdf">BANCO DE DADOS II.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_08_LBDA2_2023.pdf">LABORATÓRIO DE BANCO DE DADOS II. </a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_09_RCOM2_2023.pdf">REDES DE COMPUTADORES II.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P03_10_LRCO2_2023.pdf">LABORATÓRIO DE REDES DE COMPUTADORES II.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo4" class="periodo">4° PERÍODO</h2>
+<nav id="materias4" class="materiais escondido">
+  <ol>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_01_AEDA1_2023.pdf">ALGORITMO E ESTRUTURA DE DADOS I.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_02_LAED1_2023.pdf">LABORATÓRIO DE ALGORITMO E ESTRUTURA DE DADOS I.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/08/PE_P04_03_AOCO2_2023.pdf">ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES II.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_04_LAOC2_2023.pdf">LABORATÓRIO DE ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES II.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_05_CFVV2_2023.pdf">CÁLCULO COM FUNÇÕES DE VÁRIAS VARIÁVEIS II.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_06_FOFT0_2023.pdf">FUNDAMENTOS DE OFT.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_07_FMOFT0_2023.pdf">FÍSICA EXPERIMENTAL.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_08_EDOR0_2023.pdf">EQUAÇÕES DIFERENCIAIS ORDINÁRIAS.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_09_MSIS0_2023.pdf">MODELAGEM DE SISTEMAS.</a></li>
+    <li><a href="https://www.eng-computacao.timoteo.cefetmg.br/wp-content/uploads/sites/197/2024/07/PE_P04_10_LMSI0_2023.pdf">LABORATÓRIO DE MODELAGEM DE SISTEMAS.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo5" class="periodo">5° PERÍODO</h2>
+<nav id="materias5" class="materias escondido">
+  <ol>
+    <li><a href="#">CONCEITOS DE LINGUAGEM DE PROGRAMAÇÃO.</a></li>
+    <li><a href="#">ALGORITMO E ESTRUTRA DE DADOS II.</a></li>
+    <li><a href="#">FUNDAMENTOS DE ELETROMAGNETISMO.</a></li>
+    <li><a href="#">FÍSICA EXPERIMENTAL.</a></li>
+    <li><a href="#">DESENVOLVIMENTO DE SISTEMAS.</a></li>
+    <li><a href="#">ENGENHARIA DE SOFTWARE I.</a></li>
+    <li><a href="#">SISTEMAS OPERACIONAIS.</a></li>
+    <li><a href="#">LABORATÓRIO DE SISTEMAS OPERACIONAIS.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo6" class="periodo">6° PERÍODO</h2>
+<nav>
+  <ol>
+    <li><a href="#">MÉTODOS NUMÉRICOS COMPUTACIONAIS.</a></li>
+    <li><a href="#">LINGUAGENS FORMAIS E AUTÔMATOS.</a></li>
+    <li><a href="#">ESTATÍSTICA.</a></li>
+    <li><a href="#">GESTÃO DE PROJETO DE SOFTWARE.</a></li>
+    <li><a href="#">SISTEMAS EMBARCADOS I.</a></li>
+    <li><a href="#">LABORATÓRIO DE SISTEMAS EMBARCADOS I.</a></li>
+    <li><a href="#">CONTROLE DE SISTEMAS DINÂMICOS.</a></li>
+    <li><a href="#">LABORATÓRIO DE CONTROLE DE SISTEMAS DINÂMICOS.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo7" class="periodo">7° PERÍODO</h2>
+<nav>
+  <ol>
+    <li><a href="#">COMPILADORES.</a></li>
+    <li><a href="#">PSICOLOGIA APLICADA ÀS ORGANIZAÇÕES.</a></li>
+    <li><a href="#">ENGENHARIA DE USABILIDADE.</a></li>
+    <li><a href="#">INTELIGÊNCIA ARTIFICIAL I.</a></li>
+    <li><a href="#">CIÊNCIA DE DADOS I.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo8" class="periodo">8° PERÍODO</h2>
+<nav>
+  <ol>
+    <li><a href="#">GESTÃO ORGANIZACIONAL.</a></li>
+    <li><a href="#">SISTEMAS EMBARCADOS II.</a></li>
+    <li><a href="#">INTELIGÊNCIA ARTIFICIAL II.</a></li>
+    <li><a href="#">OTIMIZAÇÃO I.</a></li>
+    <li><a href="#">CIÊNCIA DE DADOS II.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo9" class="periodo">9° PERÍODO</h2>
+<nav>
+  <ol>
+    <li><a href="#">EMPREENDEDORISMO E MODELO DE NEGÓCIOS.</a></li>
+    <li><a href="#">INTRODUÇÃO À SOCIOLOGIA.</a></li>
+    <li><a href="#">OTIMIZAÇÃO II.</a></li>
+    <li><a href="#">METODOLOGIA DE PESQUISA.</a></li>
+  </ol>
+</nav>
+
+<h2 id="periodo10" class="periodo">10° PERÍODO</h2>
+<nav>
+  <ol>
+    <li><a href="#">LEGISLAÇÃO, COMPLIANCE E MEIO AMBIENTE PARA ENGENHARIA.</a></li>
+    <li><a href="#">CONTEXTO SOCIAL E PROFISSIONAL DO ENGENHEIRO DE COMPUTAÇÃO.</a></li>
+  </ol>
+</nav>
+
+
+
+
+  <footer>
+    <a href="https://www.cefetmg.br/"><img src="Imagem/Logo1.png" alt="Logo CEFET-MG" class="logo-img"></a>
+  </footer>
+
+  <!-- Incluindo o JavaScript externo -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Buscador</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    function showDialog() {
+        document.getElementById('info-dialog').showModal();
+    }
+
+    function closeDialog() {
+        document.getElementById('info-dialog').close();
+    }
+</script>
+
+
+</head>
+<body class="container">
+
+  <header>
+    <h1 id="bem-vindo">BEM-VINDO(A) AO BUSCADOR!</h1>
+  </header>
+
+  <br>
+
+  <div>
+            <img src="imagem/titulo.png" alt="" width="456" height="800" class="titulo-site"> 
+  </div>
+
+  <nav class="menu">
+    <ul id="cards" class="lista">
+      <li>
+        <a href="Cadastro.html">CADASTRAR</a>
+      </li>
+      <li>
+        <a href="Login.html">ENTRAR</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div>
+    <h2>CONHEÇA O CEFET-MG.</h2>
+  </div>
+
+    <!-- Video -->
+    <!-- Nós baixamos o vídeo para usar a tag (video) porém o arquivo é muito grande e o sigaa aceita somente 10 mb-->
+    <iframe class = "video" src="https://www.youtube.com/embed/Qy0NuajL5zk?si=PR1B80M1IcYo-Whk" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+  
+  <div class="curiosidade-cefet">
+    <button onclick="showDialog()">Saiba Mais.</button>
+  </div> 
+    
+  <div>
+    <dialog id="info-dialog">
+      <div class="dialog-header">CURIOSIDADE CEFET-MG.</div>
+          <div class="dialog-body">
+              Sabia que o CEFET-MG oferece uma vasta gama de Cursos de Graduação e Pós-Graduação e possui uma forte ênfase em Tecnologia e Inovação ?
+          </div>
+          <div class="dialog-footer">
+              <button onclick="closeDialog()">Fechar</button>
+          </div>
+      </dialog>
+  </div> 
+  
+  <footer>
+    <img src="Imagem/Logo1.png" alt="Logo CEFET-MG" class="logo-img">
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

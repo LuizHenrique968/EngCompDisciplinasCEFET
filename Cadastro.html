@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+   <!-- addEventListener -->
+
+  <script>
+    function atualizarProgresso() {
+      const campos = document.querySelectorAll('input[required]');
+      let camposPreenchidos = 0;
+
+      campos.forEach(campo => {
+        if (campo.value.trim() !== '') {
+          camposPreenchidos++;
+        }
+      });
+
+      const progresso = document.getElementById('progresso');
+      const percentual = (camposPreenchidos / campos.length) * 100;
+      progresso.value = percentual;
+    }
+
+    document.addEventListener('input', atualizarProgresso);
+  </script>
+
+  
+</head>
+<body class="container">
+  <header id="header-nav">
+    <h1>CADASTRE-SE.</h1>
+    <nav>
+      <a href="Index.html">Início</a>
+    </nav>
+  </header>
+  <main>
+    <form action="Login.html" method="get" onsubmit="return validarSenhas()">
+      <div>
+        <!-- A MEDIDA QUE O USUÁRIO PREENCHE OS CAMPOS, O SEU PROGRESSO AUMENTA.-->
+        <label>Progresso:</label>
+        <progress id="progresso" value="0" max="100"></progress>
+        <br>
+        <br>
+      </div>
+      <div>
+        <label for="usuario">Usuário:</label>
+        <input id="usuario" type="text" name="usuario" required="">
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" name="email" required="">
+      </div>
+      <div>
+        <label for="celular">Celular:</label>
+        <input id="celular" type="text" name="celular" required="">
+      </div>
+      <div>
+        <label for="data_nascimento">Data De Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required="">
+      </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required="">
+      </div>
+      <div>
+        <label for="confirmar_senha">Confirmar Senha:</label>
+        <input type="password" id="confirmar_senha" name="confirmar_senha" required="">
+      </div>
+      <div>
+        <label for="experiencia">Experiência:</label>
+        <input type="range" id="experiencia" name="experiencia" min="0" max="10" value="5" required>
+      </div>
+      <div>
+        <input type="checkbox" id="termo_adesao" name="termo_adesao" required="">
+        <label for="termo_adesao" class="termoadesao">Ao cadastrar-se, você concorda com a nossa <a href="PoliticaPrivacidade.html" class="politica">Política de Privacidade</a></label>
+      </div>
+      <div class="button">
+        <input class="botoes-formulario" type="submit" value="CADASTRAR">
+      </div>
+    </form>
+  </main>
+  <footer>
+    <a href="https://www.cefetmg.br/"><img src="Imagem/Logo1.png" alt="Logo CEFET-MG" class="logo-img"></a>
+  </footer>
+</body>
+</html> 

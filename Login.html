@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+  <header id="header-nav">
+    <h1>ENTRE NA SUA CONTA!</h1>
+    <nav>
+      <a href="Index.html">Início</a>
+    </nav>
+  </header>
+
+  <main>
+
+  <div id="modal" class="off">
+    <section>
+    <form action="Principal.html">
+
+      <div>
+        <label for="login-usuario">Usuário</label>
+         <input type="text" id="login-usuario">
+      </div>
+
+      <div>
+        <label for="login-senha">Senha</label>
+         <input type="password" id="login-senha">
+      </div>
+      <div>
+        <input type="checkbox" id="login-lembrar"> 
+        <label for="login-lembrar">Manter-me conectado.</label>
+      </div>
+      <div id = "button" class="button">
+        <button class="botoes-formulario" onclick="login()">Entrar</button> 
+       </div>
+    </form>
+  </section>
+  </div>
+
+
+  </main>
+
+
+  <footer>
+    <a href="https://www.cefetmg.br/"><img src="Imagem/Logo1.png" alt="Logo CEFET-MG" class="logo-img"></a>
+  </footer>
+
+  <div id="overlay"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
